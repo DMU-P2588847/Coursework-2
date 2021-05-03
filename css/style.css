@@ -1,0 +1,534 @@
+/*GENERAL*/
+body{
+background-color: black;
+
+background-image: url(../img/background-images/gnr-background-3.jpeg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: 120%;
+background-attachment: fixed;
+
+font-family: 'Bebas Neue', cursive;
+}
+
+.body{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 20%;
+  margin-bottom: 50px;
+
+}
+
+h1{
+color:Red;
+font-size: 5em;
+text-align: center;
+
+}
+
+h2{
+color:White;
+font-size: 3em;
+}
+
+h3{
+color:White;
+font-size: 2em;
+}
+
+h4{
+  color: white;
+  font-size: 1.5em;
+}
+p{
+color: Red;
+font-size: 1.5em;
+padding: 5px;
+}
+
+footer{
+font-size: 2em;
+background-color: red;
+padding:10px;
+text-align: center;
+}
+
+#Banner{
+  border-style: groove;
+  border-color: red;
+  background-color: rgba(254,254,254,0.4);
+}
+
+#BandName{
+width: 100%;
+}
+
+#navbar {
+  background-color: rgba(200,0,0,0.9);
+  padding: 60px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 9px;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 2em;
+  background-color: rgba(248,192,32,1);
+  border-style: outset;
+  margin: 10px;
+}
+
+#navbar #logo {
+  transition: 0.4s;
+  width: 30%;
+  background-color: red;
+}
+
+#navbar a:hover {
+  background-color: Black;
+  color: rgba(248,192,32,1);
+}
+
+#navbar a.active {
+  font-size: 2em;
+  padding: 9px;
+  text-align: center;
+  background-color: rgba(248,192,32,1);
+  color: rgba(200,0,0,1);
+  border-style: outset;
+  border-color: rgba(200,0,0,1);
+}
+
+#navbar-right {
+  float: right;
+  padding-right: 100px;
+}
+
+/* MOBILE  GENERAL */
+@media screen and (max-width: 600px) {
+  #navbar {
+    padding: 10px 10px;
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+
+.link{
+  color: Black;
+  font-size: 2em;
+  padding: 10px;
+  background-color: rgba(248,192,32,1);
+  text-align: center;
+  border-style: outset;
+  margin: 5px;
+}
+
+header::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.socialicon{
+width: 35px;
+border-radius: 10px;
+background-color: white;
+padding: 5px;
+}
+
+
+/* home page */
+.song{
+  background: rgba(200,0,0,0.7);
+  width: 57.5%;
+  float: left;
+  padding:5px;
+  size:contain;
+  height: 800px;
+}
+
+.songcontainer{
+  width: 100%;
+  height: 81%;
+}
+
+#songbutton{
+  background-color: black;
+  width: 100%;
+  height: 645px;
+}
+.social{
+  background: rgba(143,156,35,0.7);
+  width: 37%;
+  float: right;
+  padding: 5px;
+  height: 800px;
+
+}
+
+.twitter-timeline{
+  width: 100%;
+  height: 100%;
+}
+
+.socialcontainer{
+
+  width: 100%;
+  height: 82%;
+  overflow-y: auto;
+}
+
+section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.latestvideo{
+background: rgba(248,192,32,0.7);
+  padding:15px;
+}
+.videocontainer{
+width: 100%;
+ padding-top: 56.25%;
+ height: 0px;
+ position: relative;
+}
+
+.video{
+  width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+}
+
+/* MOBILE HOME PAGE */
+@media screen and (max-width: 600px) {
+  div.body {
+    margin:0;
+    margin-top: 200px;
+  }
+
+  .song{
+    content: "";
+    display: block;
+    clear:left;
+    width:100%;
+  }
+
+  .social{
+    display: none;
+    width: 100%;
+  }
+}
+
+
+/* band page */
+
+#introduction{
+background-color: rgba(66,31,147,0.7);
+padding: 5px;
+
+}
+
+#members{
+  background-color: Green;
+  padding: 5px;
+}
+
+.columns{
+column-count: 7;
+column-fill:balance;
+}
+.member{
+  background-color: red;
+  padding: 5px;
+}
+
+.memberphoto{
+width: 100%;
+height: 190px;
+display: block;
+}
+
+.member {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: rgba(66,31,147,0.8)
+}
+
+.member:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 13px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#timeline{
+  background-color: Orange;
+  padding: 5px;
+}
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+
+}
+
+.timeline ul li {
+    margin-bottom: 50px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.point {
+    min-width: 20px;
+    height: 20px;
+    background-color: rgba(66,31,147,1);
+    border-radius: 100%;
+    z-index: 2;
+    border: 3px #333333 solid;
+    position: relative;
+    left: 1px;
+}
+
+.timeline ul li .content {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.timeline ul li:nth-child(odd) .content {
+    padding-left: 0;
+}
+
+.timeline ul li:nth-child(odd) .date {
+    padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .content {
+    padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .date {
+    padding-left: 0;
+}
+
+.timeline ul li .date {
+    width: 50%;
+    padding: 0 20px;
+    font-weight: normal;
+}
+
+.timeline ul li .date h4 {
+    background-color: rgba(66,31,147,1);
+    width: 100px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.timeline ul li .content h3 {
+    padding: 10px 20px;
+    background-color: #be9fe1;
+    margin-bottom: 0;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.timeline ul li .content p {
+    padding: 10px 20px;
+    background-color: #e1d9ec;
+    margin-top: 0;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.timeline ul li:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline ul li:nth-child(even) .date h4 {
+    float: right
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    left: 50%;
+    background-color: #333333;
+}
+@media (max-width: 800px) {
+    .point {
+        min-width: 15px;
+        height: 15px;
+    }
+
+    html, body {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    html, body {
+        font-size: 14px;
+    }
+
+    .point {
+        min-width: 12px;
+        height: 12px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    html, body {
+        font-size: 10px;
+    }
+
+    p {
+        padding: 10px !important;
+    }
+}
+
+/* music page */
+#Releases{
+background-color: blue;
+color: blue;
+padding: 5px;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 30%;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
